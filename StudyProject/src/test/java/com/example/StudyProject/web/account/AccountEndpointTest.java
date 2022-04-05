@@ -1,9 +1,9 @@
 package com.example.StudyProject.web.account;
 
-import com.example.StudyProject.tools.BaseAbstractIntegrationTest;
+import com.example.StudyProject.tools.BaseTest;
 import org.junit.jupiter.api.Test;
 
-class AccountEndpointTest extends BaseAbstractIntegrationTest {
+class AccountEndpointTest extends BaseTest {
 
     @Test
     void createAccount() {

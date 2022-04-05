@@ -1,12 +1,168 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id="StudyProject" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$" external.system.id="GRADLE" external.system.module.group="" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_11" inherit-compiler-output="true">
+<module external.linked.project.id="StudyProject" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$" external.system.id="GRADLE" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="android-gradle" name="Android-Gradle">
+      <configuration>
+        <option name="GRADLE_PROJECT_PATH" value=":" />
+      </configuration>
+    </facet>
+    <facet type="java-gradle" name="Java-Gradle">
+      <configuration>
+        <option name="BUILD_FOLDER_PATH" value="$MODULE_DIR$/build" />
+        <option name="BUILDABLE" value="true" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_11">
+    <output url="file://$MODULE_DIR$/build/classes/java/main" />
+    <output-test url="file://$MODULE_DIR$/build/classes/java/test" />
     <exclude-output />
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
       <excludeFolder url="file://$MODULE_DIR$/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="Gradle: spring-boot-starter-data-rest-2.6.6" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-boot-starter-jooq-2.6.6" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-boot-starter-security-2.6.6" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-boot-starter-web-2.6.6" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-boot-starter-webflux-2.6.6" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-boot-starter-validation-2.6.6" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: flyway-core-8.0.5" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-kafka-2.8.4" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: annotations-15.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-data-rest-webmvc-3.6.3" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-boot-starter-jdbc-2.6.6" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: jakarta.xml.bind-api-2.3.3" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: jakarta.activation-api-1.2.2" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-data-rest-core-3.6.3" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-jdbc-5.3.18" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-tx-5.3.18" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: jooq-3.14.15" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-boot-starter-json-2.6.6" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-boot-starter-2.6.6" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-security-config-5.6.2" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-security-web-5.6.2" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-webmvc-5.3.18" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-boot-autoconfigure-2.6.6" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-boot-2.6.6" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-security-core-5.6.2" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-hateoas-1.4.1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-plugin-core-2.0.0.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-context-5.3.18" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-aop-5.3.18" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-boot-starter-tomcat-2.6.6" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-webflux-5.3.18" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-web-5.3.18" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-boot-starter-reactor-netty-2.6.6" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: tomcat-embed-el-9.0.60" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: hibernate-validator-6.2.3.Final" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-messaging-5.3.18" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-retry-1.3.2" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: kafka-clients-3.0.1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: jackson-datatype-jsr310-2.13.2" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: jackson-annotations-2.13.2" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: jackson-module-parameter-names-2.13.2" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: jackson-core-2.13.2" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: jackson-datatype-jdk8-2.13.2" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: jackson-databind-2.13.2.2" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: HikariCP-4.0.3" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-data-commons-2.6.3" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-boot-starter-logging-2.6.6" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: logback-classic-1.2.11" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: log4j-to-slf4j-2.17.2" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: jul-to-slf4j-1.7.36" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: json-path-2.6.0" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: slf4j-api-1.7.36" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-beans-5.3.18" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-expression-5.3.18" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-core-5.3.18" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: reactor-netty-http-1.0.17" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: reactor-netty-core-1.0.17" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: reactor-core-3.4.16" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: reactive-streams-1.0.3" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: jakarta.annotation-api-1.3.5" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: snakeyaml-1.29" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: tomcat-embed-websocket-9.0.60" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: tomcat-embed-core-9.0.60" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: jakarta.validation-api-2.0.2" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: jboss-logging-3.4.3.Final" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: classmate-1.5.1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: evo-inflector-1.3" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-jcl-5.3.18" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: spring-security-crypto-5.6.2" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: netty-codec-http2-4.1.75.Final" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: netty-handler-proxy-4.1.75.Final" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: netty-codec-http-4.1.75.Final" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: netty-resolver-dns-native-macos-4.1.75.Final-osx-x86_64" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: netty-resolver-dns-classes-macos-4.1.75.Final" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: netty-resolver-dns-4.1.75.Final" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: netty-transport-native-epoll-4.1.75.Final-linux-x86_64" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: logback-core-1.2.11" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: log4j-api-2.17.2" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: netty-handler-4.1.75.Final" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: netty-codec-dns-4.1.75.Final" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: netty-codec-socks-4.1.75.Final" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: netty-codec-4.1.75.Final" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: netty-transport-classes-epoll-4.1.75.Final" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: netty-transport-native-unix-common-4.1.75.Final" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: netty-transport-4.1.75.Final" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: netty-buffer-4.1.75.Final" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: netty-resolver-4.1.75.Final" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: netty-common-4.1.75.Final" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: json-smart-2.4.8" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: accessors-smart-2.4.8" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: asm-9.1" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: postgresql-1.16.3" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: jdbc-1.16.3" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: database-commons-1.16.3" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: testcontainers-1.16.3" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: duct-tape-1.0.8" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: spring-boot-starter-test-2.6.6" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: reactor-test-3.4.16" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: spring-kafka-test-2.8.4" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: spring-security-test-5.6.2" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: spring-boot-test-autoconfigure-2.6.6" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: spring-boot-test-2.6.6" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: kafka-streams-test-utils-3.0.1" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: kafka_2.13-3.0.1" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: kafka_2.13-3.0.1-test" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: kafka-streams-3.0.1" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: kafka-clients-3.0.1-test" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: assertj-core-3.21.0" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: junit-4.13.2" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: hamcrest-core-2.2" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: hamcrest-2.2" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: junit-jupiter-params-5.8.2" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: junit-jupiter-api-5.8.2" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: junit-platform-commons-1.8.2" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: junit-jupiter-5.8.2" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: mockito-junit-jupiter-4.0.0" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: mockito-core-4.0.0" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: jsonassert-1.5.0" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: spring-test-5.3.18" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: xmlunit-core-2.8.4" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: zookeeper-3.6.3" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: kafka-metadata-3.0.1" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: docker-java-api-3.2.12" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: docker-java-transport-zerodep-3.2.12" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: byte-buddy-1.11.22" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: byte-buddy-agent-1.11.22" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: android-json-0.0.20131108.vaadin1" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: zookeeper-jute-3.6.3" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: audience-annotations-0.5.0" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: netty-transport-native-epoll-4.1.75.Final" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: scala-library-2.13.6" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: opentest4j-1.2.0" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: apiguardian-api-1.1.2" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: rocksdbjni-6.19.3" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: commons-compress-1.21" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: docker-java-transport-3.2.12" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: jna-5.8.0" level="project" />
   </component>
 </module>
