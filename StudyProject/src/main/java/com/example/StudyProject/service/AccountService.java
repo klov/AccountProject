@@ -1,22 +1,38 @@
 package com.example.StudyProject.service;
 
+import com.example.StudyProject.repository.buss.AccountEventBuss;
+import com.example.StudyProject.repository.buss.AccountRepository;
 import com.example.StudyProject.service.model.Account;
+import org.springframework.stereotype.Service;
+import org.springframework.validation.annotation.Validated;
 
 import javax.validation.constraints.NotNull;
 
+@Validated
+@Service
 public class AccountService {
-    public Account fillAccount(String accountId, @NotNull Integer amount) {
 
-        return null;
+    private final AccountEventBuss accountEventBuss;
+    private final AccountRepository accountRepository;
+
+    public AccountService(AccountEventBuss accountEventBuss, AccountRepository accountRepository) {
+        this.accountEventBuss = accountEventBuss;
+        this.accountRepository = accountRepository;
+    }
+
+    public Account fillAccount(@NotNull String accountId, @NotNull Integer amount) {
+        Account account = accountRepository.update(accountId, amount);
+        boolean  result = accountEventBuss.push(account);
+        return account;
     }
 
     public Account create() {
-        return null;
+        Account account = accountRepository.create();
+        boolean  result = accountEventBuss.push(account);
+        return account;
     }
 
     public Integer getBalance(String accountId) {
-
-
-        return null;
+        return accountRepository.getBalance(accountId);
     }
 }
