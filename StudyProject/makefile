@@ -4,4 +4,9 @@ kafkaUp: ## Up local kafka
 kafkaDown: ## Down local kafka
 		docker-compose -f kafka-compose.yml down
 
+pgUp:
+	docker-compose -f postgres-compose.yml  up -d
+
+pgDown:
+	docker-compose -f postgres-compose.yml  down
 
