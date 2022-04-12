@@ -3,6 +3,7 @@ package com.example.StudyProject.web.account;
 
 import com.example.StudyProject.service.AccountService;
 import com.example.StudyProject.service.model.Account;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -12,12 +13,12 @@ import javax.validation.constraints.NotNull;
 
 @Validated
 @Controller
-@RequestMapping("/account")
-public class AccountEndpoint {
+@RequestMapping("/account", produces = MediaType.APPLICATION_JSON_VALUE)
+public class AccountController {
 
     private final AccountService accountService;
 
-    public AccountEndpoint(AccountService accountService) {
+    public AccountController(AccountService accountService) {
         this.accountService = accountService;
     }
 

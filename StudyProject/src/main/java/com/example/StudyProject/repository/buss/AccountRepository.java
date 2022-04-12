@@ -8,4 +8,6 @@ public interface AccountRepository {
     Account create();
 
     Integer getBalance(String accountId);
+
+    void deleteAll();
 }

@@ -1,11 +1,14 @@
 package com.example.StudyProject.tools;
 
 import com.example.StudyProject.StudyProjectApplicationTests;
+import com.example.StudyProject.repository.buss.AccountRepository;
+import com.example.StudyProject.service.model.Account;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.junit.ClassRule;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContextInitializer;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -18,10 +21,13 @@ import org.testcontainers.containers.GenericContainer;
 @SpringBootTest(
         webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT
 )
+@AutoConfigureMockMvc
 public class BaseTest {
     @ClassRule
     public static GenericContainer postgresContainer = new  GenericContainer("postgres:13").withExposedPorts(27017);
 
+    @Autowired
+    private AccountRepository accountRepository;
     @Autowired
     BaseApi api;
 
@@ -40,7 +46,11 @@ public class BaseTest {
     }
 
     public void cleanDb(){
-        postgresContainer.
+        accountRepository.deleteAll();
+    }
+
+    public Account createAccount(String uuid, int value){
+
     }
 
     static class Initializer implements ApplicationContextInitializer<ConfigurableApplicationContext> {

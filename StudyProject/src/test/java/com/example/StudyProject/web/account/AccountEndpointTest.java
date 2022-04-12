@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 class AccountEndpointTest extends BaseTest {
 
     @Test
-    void createAccount() {
+    void createAccount(String uuid, int value) {
     }
 
     @Test
