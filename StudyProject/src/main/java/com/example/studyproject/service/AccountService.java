@@ -1,8 +1,8 @@
-package com.example.StudyProject.service;
+package com.example.studyproject.service;
 
-import com.example.StudyProject.repository.buss.AccountEventBuss;
-import com.example.StudyProject.repository.buss.AccountRepository;
-import com.example.StudyProject.service.model.Account;
+import com.example.studyproject.repository.buss.AccountEventBuss;
+import com.example.studyproject.repository.buss.AccountRepository;
+import com.example.studyproject.service.model.Account;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 

@@ -1,6 +1,6 @@
-package com.example.StudyProject.web.account;
+package com.example.studyproject.web.account;
 
-import com.example.StudyProject.tools.BaseTest;
+import com.example.studyproject.tools.BaseTest;
 import org.junit.jupiter.api.Test;
 
 class AccountEndpointTest extends BaseTest {

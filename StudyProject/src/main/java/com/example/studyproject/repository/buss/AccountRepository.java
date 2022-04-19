@@ -1,6 +1,6 @@
-package com.example.StudyProject.repository.buss;
+package com.example.studyproject.repository.buss;
 
-import com.example.StudyProject.service.model.Account;
+import com.example.studyproject.service.model.Account;
 
 public interface AccountRepository {
     Account update(String accountId, Integer amount);

@@ -1,8 +1,8 @@
-package com.example.StudyProject.web.account;
+package com.example.studyproject.web.account;
 
 
-import com.example.StudyProject.service.AccountService;
-import com.example.StudyProject.service.model.Account;
+import com.example.studyproject.service.AccountService;
+import com.example.studyproject.service.model.Account;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.annotation.Validated;

@@ -1,6 +1,6 @@
-package com.example.StudyProject.tools;
+package com.example.studyproject.tools;
 
-import com.example.StudyProject.service.DbHandler;
+import com.example.studyproject.service.DbHandler;
 import org.springframework.http.server.reactive.HttpHandler;
 
 public class BaseApi {

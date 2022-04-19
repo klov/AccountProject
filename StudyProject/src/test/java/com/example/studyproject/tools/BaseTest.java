@@ -1,8 +1,8 @@
-package com.example.StudyProject.tools;
+package com.example.studyproject.tools;
 
-import com.example.StudyProject.StudyProjectApplicationTests;
-import com.example.StudyProject.repository.buss.AccountRepository;
-import com.example.StudyProject.service.model.Account;
+import com.example.studyproject.StudyProjectApplicationTests;
+import com.example.studyproject.repository.buss.AccountRepository;
+import com.example.studyproject.service.model.Account;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.junit.ClassRule;

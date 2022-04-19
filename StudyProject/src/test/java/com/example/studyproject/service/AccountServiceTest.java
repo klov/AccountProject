@@ -1,7 +1,7 @@
-package com.example.StudyProject.service;
+package com.example.studyproject.service;
 
-import com.example.StudyProject.service.model.Account;
-import com.example.StudyProject.tools.BaseTest;
+import com.example.studyproject.service.model.Account;
+import com.example.studyproject.tools.BaseTest;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
