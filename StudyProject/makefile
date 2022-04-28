@@ -6,7 +6,7 @@ kafkaDown: ## Down local kafka
 
 pgUp:
 	docker-compose -f postgres-compose.yml  up -d
-	gradle flywayMigrate
+	./gradlew flywayMigrate
 
 pgDown:
 	docker-compose -f postgres-compose.yml  down
