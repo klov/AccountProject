@@ -27,7 +27,6 @@ class AccountServiceTest extends BaseTest {
         cleanDb();
     }
 
-
     @Test
     void fillAccount() {
 
@@ -41,17 +40,13 @@ class AccountServiceTest extends BaseTest {
                 .content(String.format("{id:%s}", id)))
                 .andExpect(status().isOk())
                 .andExpect(content().json(String.format("{id:%s, value:0}",id)));
-
-
     }
 
     @Test
     void getBalance() throws Exception {
-        Account account = createAccount(UUID.randomUUID().toString(), 253);
-
+        Account account = createAccount(UUID.randomUUID(), 253);
         mockMvc.perform(post("/account/get"))
                 .andExpect(status().isOk())
                 .andExpect(content().string("253"));
-
     }
 }

@@ -20,7 +20,7 @@ build {
 
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '11'
+sourceCompatibility = '17'
 
 repositories {
 	mavenCentral()
@@ -62,7 +62,7 @@ jooq {
 				logging = org.jooq.meta.jaxb.Logging.WARN
 				jdbc {
 					driver = 'org.postgresql.Driver'
-					url = project.properties['flyway.user']
+					url = project.properties['flyway.url']
 					user = project.properties['flyway.user']
 					password = project.properties['flyway.password']
 				}
@@ -70,7 +70,7 @@ jooq {
 					name = 'org.jooq.codegen.DefaultGenerator'
 					database {
 						name = 'org.jooq.meta.postgres.PostgresDatabase'
-						includes = '.*'
+						includes = 'public.*'
 						excludes = ''
 					}
 					target {

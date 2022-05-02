@@ -13,7 +13,7 @@ import javax.validation.constraints.NotNull;
 
 @Validated
 @Controller
-@RequestMapping("/account", produces = MediaType.APPLICATION_JSON_VALUE)
+@RequestMapping(name="/account", produces = MediaType.APPLICATION_JSON_VALUE)
 public class AccountController {
 
     private final AccountService accountService;
@@ -33,7 +33,7 @@ public class AccountController {
     }
 
     @PostMapping("get")
-    public Integer getBalance(@RequestParam("accountId") @NotNull String accountId){
+    public Long getBalance(@RequestParam("accountId") @NotNull String accountId){
         return accountService.getBalance(accountId);
     }
 

@@ -1,0 +1,5 @@
+pg_base:
+  user: postgres
+  password: postgres
+  url: jdbc:postgresql://localhost:5432/account
+  database: account

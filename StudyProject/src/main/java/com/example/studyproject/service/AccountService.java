@@ -1,7 +1,7 @@
 package com.example.studyproject.service;
 
 import com.example.studyproject.repository.buss.AccountEventBuss;
-import com.example.studyproject.repository.buss.AccountRepository;
+import com.example.studyproject.repository.AccountRepository;
 import com.example.studyproject.service.model.Account;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
@@ -32,7 +32,7 @@ public class AccountService {
         return account;
     }
 
-    public Integer getBalance(String accountId) {
-        return accountRepository.getBalance(accountId);
+    public Long getBalance(String accountId) {
+        return accountRepository.getBalance(accountId).orElse(null);
     }
 }
