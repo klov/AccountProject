@@ -1,4 +1,4 @@
-package com.example.studyproject.repository.buss;
+package com.example.studyproject.repository;
 
 import com.example.studyproject.service.model.Account;
 

@@ -1,6 +1,5 @@
 package com.example.studyproject.application.config;
 
-import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -8,7 +7,6 @@ import org.springframework.context.annotation.Configuration;
 import javax.sql.DataSource;
 
 @Configuration
-
 public class PersistanceConfig {
 
     private final DataBaseConfiguration dataBaseConfiguration;
@@ -19,13 +17,10 @@ public class PersistanceConfig {
 
     @Bean
     public DataSource postgresDataSource(){
-        HikariConfig config = new HikariConfig();
-        config.setDataSourceClassName("org.postgresql.ds.PGSimpleDataSource");
-        config.setUsername(dataBaseConfiguration.getUser());
-        config.setPassword(dataBaseConfiguration.getPassword());
-        config.addDataSourceProperty("databaseName", dataBaseConfiguration.getDatabase());
-        config.setJdbcUrl(dataBaseConfiguration.getJdbcUrl());
-        HikariDataSource ds = new HikariDataSource(config);
+        HikariDataSource ds = new HikariDataSource();
+        ds.setPassword(dataBaseConfiguration.getPassword());
+        ds.setUsername(dataBaseConfiguration.getUsername());
+        ds.setJdbcUrl(dataBaseConfiguration.getJdbcUrl());
         return ds;
     }
 }

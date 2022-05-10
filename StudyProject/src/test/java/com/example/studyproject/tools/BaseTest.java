@@ -1,5 +1,6 @@
 package com.example.studyproject.tools;
 
+import com.example.studyproject.StudyProjectApplication;
 import com.example.studyproject.StudyProjectApplicationTests;
 import com.example.studyproject.repository.AccountRepository;
 import com.example.studyproject.service.model.Account;
@@ -16,8 +17,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.TestConfiguration;
-import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
-import org.springframework.boot.web.servlet.server.ServletWebServerFactory;
 import org.springframework.context.ApplicationContextInitializer;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
@@ -34,7 +33,7 @@ import java.util.UUID;
 @ContextConfiguration(classes = {StudyProjectApplicationTests.class})
 @EmbeddedKafka(partitions = 1, brokerProperties = { "listeners=PLAINTEXT://localhost:9092", "port=9092" })
 @SpringBootTest(
-        classes = SpringBootApplication.class,
+        classes = StudyProjectApplication.class,
         webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT
 )
 @AutoConfigureMockMvc
@@ -48,7 +47,7 @@ public class BaseTest {
         public DataSource postgresDataSource(){
 
             HikariConfig config = new HikariConfig();
-            config.setDataSourceClassName("org.postgresql.ds.PGSimpleDataSource");
+            config.setDataSourceClassName("org.postgresql.Driver");
             config.setUsername(POSTGRES_USER);
             config.setPassword(POSTGRES_PASSWORD);
             config.addDataSourceProperty("databaseName", POSTGRES_DATABASE);

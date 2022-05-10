@@ -3,17 +3,17 @@ package com.example.studyproject.application.config;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Component;
 
 
 @Configuration
 @EnableConfigurationProperties
-@ConfigurationProperties(prefix="pg_base")
+@ConfigurationProperties(prefix="spring.ds-postgresql")
 public class DataBaseConfiguration {
-    private String user;
+    private String username;
     private String password;
     private String jdbc;
     private String database;
+    private String jdbcUrl;
 
     public String getJdbcUrl() {
         return jdbcUrl;
@@ -23,7 +23,7 @@ public class DataBaseConfiguration {
         this.jdbcUrl = jdbcUrl;
     }
 
-    private String jdbcUrl;
+
 
     public String getDatabase() {
         return database;
@@ -33,12 +33,12 @@ public class DataBaseConfiguration {
         this.database = database;
     }
 
-    public String getUser() {
-        return user;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUser(String user) {
-        this.user = user;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {

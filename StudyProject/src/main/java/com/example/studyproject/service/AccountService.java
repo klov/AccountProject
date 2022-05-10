@@ -1,6 +1,6 @@
 package com.example.studyproject.service;
 
-import com.example.studyproject.repository.buss.AccountEventBuss;
+import com.example.studyproject.repository.AccountEventBuss;
 import com.example.studyproject.repository.AccountRepository;
 import com.example.studyproject.service.model.Account;
 import org.springframework.stereotype.Service;

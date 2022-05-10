@@ -6,13 +6,14 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.jooq.*;
 import org.jooq.Record;
+import org.springframework.stereotype.Component;
 
 
 import java.util.Optional;
 import java.util.UUID;
 
 import static com.example.jooq.public_.tables.Account.ACCOUNT;
-
+@Component
 public class AccountRepositoryJooqPostgres implements AccountRepository {
 
     private final DSLContext context;
