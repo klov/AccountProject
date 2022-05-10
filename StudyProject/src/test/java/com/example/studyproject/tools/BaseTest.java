@@ -6,8 +6,6 @@ import com.example.studyproject.repository.AccountRepository;
 import com.example.studyproject.service.model.Account;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
-import org.apache.kafka.clients.consumer.KafkaConsumer;
-import org.apache.kafka.clients.producer.KafkaProducer;
 import org.junit.ClassRule;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -73,13 +71,13 @@ public class BaseTest {
     @Autowired
     BaseApi api;
 
-    @Autowired
-    private KafkaConsumer consumer;
+//    @Autowired
+//    private KafkaConsumer consumer;
 
-    @Autowired
-    private KafkaProducer producer;
+//    @Autowired
+//    private KafkaProducer producer;
 
-    @Value("${test.topic}")
+//    @Value("${test.topic}")
     private String topic;
 
     public void setup() {
@@ -87,7 +85,7 @@ public class BaseTest {
     }
 
     public void cleanDb(){
-        accountRepository.deleteAll();
+        api.deleteAll();
     }
 
     public Account createAccount(UUID uuid, long value){

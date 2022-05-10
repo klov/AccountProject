@@ -7,11 +7,10 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @EnableConfigurationProperties
-@ConfigurationProperties(prefix="spring.ds-postgresql")
+@ConfigurationProperties(prefix="pgbase")
 public class DataBaseConfiguration {
     private String username;
     private String password;
-    private String jdbc;
     private String database;
     private String jdbcUrl;
 
@@ -47,13 +46,5 @@ public class DataBaseConfiguration {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public String getJdbc() {
-        return jdbc;
-    }
-
-    public void setJdbc(String jdbc) {
-        this.jdbc = jdbc;
     }
 }

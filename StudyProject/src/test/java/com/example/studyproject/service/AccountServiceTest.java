@@ -21,7 +21,6 @@ class AccountServiceTest extends BaseTest {
 
     @Autowired
     private MockMvc mockMvc;
-
     @BeforeEach
     public void setup(){
         cleanDb();
